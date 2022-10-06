@@ -9,7 +9,7 @@ public class _70enYakinSayiyiBul {
 
         int dizi[] = {15, 560, 2367,45,278,18,20,5};
 
-        enYakinSayilar(dizi, 55);
+        enYakinSayilar(dizi, 4);
 
     }
 
@@ -26,18 +26,18 @@ public class _70enYakinSayiyiBul {
                 System.out.println("Girilen Sayıdan En Yakın Büyük Sayı : " + kopyaDizi[i+1]);
             }
 
-            else if(kopyaDizi[kopyaDizi.length-1] == b){
-                System.out.println("Girilen Sayıdan En Yakın Küçük Sayı : " + kopyaDizi[i]);
-                System.out.println("Girilen Sayı Dizinin En büyük Elemanıdır");
-            }
-
-            else if(kopyaDizi[0] == b){
-                System.out.println("Girilen Sayı Dizinin En Küçük Elemanıdır");
-                System.out.println("Girilen Sayıdan En Yakın Büyük Sayı : " + kopyaDizi[i+1]);
-
-            } 
+           
             
         } 
+        if(kopyaDizi[0] == b){
+            System.out.println("Girilen Sayı Dizinin En Küçük Elemanıdır");
+            System.out.println("Girilen Sayıdan En Yakın Büyük Sayı : " + kopyaDizi[1]);
+
+        } 
+        if(kopyaDizi[kopyaDizi.length-1] == b){
+            System.out.println("Girilen Sayıdan En Yakın Küçük Sayı : " + kopyaDizi[kopyaDizi.length-2]);
+            System.out.println("Girilen Sayı Dizinin En büyük Elemanıdır");
+        }
 
 
     }
